@@ -27,9 +27,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # */
 
-
-
-
 import hubo_ach
 import ach
 import sys
@@ -46,7 +43,7 @@ HUBO_CHAN_VIEW   = 'hubo-view-vid'
 # CV setup 
 cv.NamedWindow("w2", cv.CV_WINDOW_AUTOSIZE)
 #capture = cv.CaptureFromCAM(0)
-capture = cv2.VideoCapture(0)
+#capture = cv2.VideoCapture(0)
 
 # added
 ##sock.connect((MCAST_GRP, MCAST_PORT))
@@ -57,6 +54,11 @@ newy = 120
 v = ach.Channel(HUBO_CHAN_VIEW)
 v.flush()
 i=0
+print '======================================'
+print '============= Hubo-View =============='
+print '========== Daniel M. Lofaro =========='
+print '========= dan@danLofaro.com =========='
+print '======================================'
 while True:
     # Get Frame
 #    f, img = capture.read()
